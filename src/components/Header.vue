@@ -4,7 +4,7 @@
             <h1>Alexandre Clémençot</h1>
         </div>
         <nav class="header_link">
-            <button id="home" href=""><fa icon="home" /></button>
+            <button id="home" href="">Accueil</button>
             <button href="#projets">Projets</button>
             <button href="#contact">Contact</button>
         </nav>
@@ -34,14 +34,21 @@ export default {
         margin-right: 100px;
         & button{
             text-decoration: none;
-            color: white;
+            color: rgb(0, 138, 230);
             margin: 25px;
             width: 100px;
             height: 35px;
-            background-color: rgb(228, 129, 49);
+            background: none;            
             border-radius: 4px;
             border: none;
             font-size: 1.2rem;
+            transform: scale(1);
+            transition-property: transform;
+            transition-duration: 1000ms;
+            &:hover {
+                // animation: border 3s ease-in-out;
+                transform: scale(1.15);
+            }
         }
     }
     &_burger{
@@ -51,6 +58,12 @@ export default {
 
 #home{
     width: 60px;
+}
+
+@keyframes border {
+    0%{
+        transform: rotateY('angle');
+    }
 }
 
 @media all and (min-width: 800px) and (max-width: 1100px){
