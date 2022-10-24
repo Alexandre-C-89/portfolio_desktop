@@ -170,12 +170,15 @@ import Header from './components/Header.vue';
       <div class="contact_card_text">
         <h3>Clémençot Alexandre</h3>
         <p>
-          93350 Le Bourget
-          Permis B
+          93350 Le Bourget <br>
+          Permis B<br>
           <fa icon="phone" /> 06 76 08 34 91
         </p>
-        <a href="mailto:clemencot.alexandre@gmail.com"><fa icon="envelope" /></a>
+        <div class="contact_card_text_mail">
+          <a href="mailto:clemencot.alexandre@gmail.com"><fa icon="envelope" />clemencot.alexandre@gmail.com</a>
+        </div>
       </div>
+
     </div>
   </div>
 
@@ -339,13 +342,13 @@ body{
   align-items: center;
   margin: 80px 0;
   &_card{
-    width: calc(600px + 10vw);
+    width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: teal;
     border: 2px solid rgb(224, 149, 9);
-
+    padding: 15px;
     &_title{
       font-size: 1.8rem;
       margin-bottom: 20px;
@@ -361,6 +364,16 @@ body{
     &_text{
       margin: 20px;
       font-size: 1.5rem;
+      &_mail{
+        padding: 5px;
+        & a{
+          width: 50px;
+          height: 50px;
+          & svg{
+            margin-right: 10px;
+          }
+        }
+      }
     }
   }
 }
