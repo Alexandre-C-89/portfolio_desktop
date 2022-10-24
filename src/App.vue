@@ -127,6 +127,26 @@ import Header from './components/Header.vue';
         </div>
       </div>
 
+      <div class="rec_container_card">
+        <div class="rec_container_card_img">
+          <img src="./assets/coralie.JPG" alt="">
+        </div>
+        <div class="rec_container_card_title">
+          <h3>Coralie Boulay</h3>
+        </div>
+        <div class="rec_container_card_text">
+          <p>
+            J'ai eu le plaisir de rencontrer Alexandre à l'un de nos Job Dating. J'ai pu apprécier sa personnalité posée, 
+            structurée et quand nous avons échangé sur son métier et le type d'entreprise 
+            dans lequel il se projette, j'ai pu le voir s'animer et j'ai vu beaucoup de 
+            passion dans son regard. A travers nos échanges réguliers, en plus d'être 
+            quelqu'un de réactif et de très poli, il a démontré une grande capacité à se mobiliser 
+            pour délivrer le travail attendu dans des délais très courts. Je recommande vraiment 
+            Alexandre si un recruteur vient à me lire sur son profil. Qu'il n'hésite pas à me contacter !
+          </p>
+        </div>
+      </div>
+
     </div>
 
   </div>
